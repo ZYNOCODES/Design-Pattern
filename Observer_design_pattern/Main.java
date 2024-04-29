@@ -16,6 +16,17 @@ public class Main {
         website.registerObserver(customer2);
         website.registerObserver(customer3);
 
-        website.productAvailable(); // Notify all observers that the new iPhone model is available
+        System.out.println("==========================================================================");
+
+        website.productAvailable();
+
+        System.out.println("==========================================================================");
+
+        website.removeObserver(customer2);
+
+        website.productAvailable();
+
+        System.out.println("==========================================================================");
+
     }
 }
